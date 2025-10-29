@@ -1,0 +1,87 @@
+/* Custom animations */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #f59e0b;
+  border-radius: 4px;
+}
+
+/* Burger menu animation */
+.burger-line {
+  transition: all 0.3s ease;
+}
+.menu-open .burger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.menu-open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-open .burger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu item hover effect */
+.menu-item:hover .menu-item-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-item-overlay {
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+/* Small helpers to keep design from index.html */
+.nav-link {
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #f59e0b;
+}
+
+.btn-primary {
+  background-color: #f59e0b;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-primary:hover {
+  background-color: #d97706;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline {
+  border: 2px solid #f59e0b;
+  color: #f59e0b;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+.btn-outline:hover {
+  background-color: #f59e0b;
+  color: white;
+}
