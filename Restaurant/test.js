@@ -150,7 +150,7 @@ const menuItems = [
     name: "Chocolate Brownie",
     description: "Warm brownie with vanilla ice cream and chocolate sauce.",
     price: 4194,
-    category: "desserts",
+    category: "",
     image:
       "https://images.unsplash.com/photo-1672867458764-2a04080005fe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470",
   },

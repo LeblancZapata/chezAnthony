@@ -28,7 +28,7 @@
 .burger-line {
   transition: all 0.3s ease;
 }
-.menu-open .burger-line:nth-child(1) {
+bh .menu-open .burger-line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 .menu-open .burger-line:nth-child(2) {
