@@ -1,0 +1,1079 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chez Anthony - Fast Food & Grill</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== EN-TÊTE / HEADER ===== -->
+    <header id="header">
+      <div class="header-inner">
+        <div class="logo">
+          <img
+            src="IMG-20260521-WA0100.jpg"
+            alt="Logo Chez Anthony"
+            class="logo-img"
+          />
+        </div>
+
+        <nav id="nav">
+          <a href="#accueil">Accueil</a>
+          <a href="#menu">Menu</a>
+          <a href="#grillades">Grillades</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a
+          href="https://wa.me/237654795898"
+          target="_blank"
+          class="btn-commander"
+        >
+          <i class="fab fa-whatsapp"></i> Commander
+        </a>
+
+        <button id="burger-btn" aria-label="Menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#menu">Menu</a>
+      <a href="#grillades">Grillades</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+      <a
+        href="https://wa.me/237654795898"
+        target="_blank"
+        class="btn-commander-mobile"
+      >
+        <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+      </a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section id="accueil" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-tag">Fast Food & Grill à Yaoundé</p>
+        <h1>Bienvenue chez<br /><span class="accent">Anthony</span></h1>
+        <p class="hero-desc">
+          Grillades, poulets, burgers et saveurs locales — préparés avec amour
+          et des ingrédients frais.
+        </p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn-primary">Voir le menu</a>
+          <a
+            href="https://wa.me/237654795898"
+            target="_blank"
+            class="btn-whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i> Commander maintenant
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="IMG-20251103-WA0097.jpg" alt="Burger Délicieux" />
+      </div>
+    </section>
+
+    <!-- ===== CHIFFRES / STATS ===== -->
+    <section class="stats">
+      <div class="stat-item">
+        <i class="fas fa-utensils"></i>
+        <strong>+500</strong>
+        <span>Plats servis / jour</span>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-star"></i>
+        <strong>4.9/5</strong>
+        <span>Satisfaction client</span>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-fire-alt"></i>
+        <strong>100%</strong>
+        <span>Ingrédients frais</span>
+      </div>
+      <div class="stat-item">
+        <i class="fab fa-whatsapp"></i>
+        <strong>Livraison</strong>
+        <span>Via WhatsApp</span>
+      </div>
+    </section>
+
+    <!-- ===== MENU PRINCIPAL ===== -->
+    <section id="menu" class="section-menu">
+      <div class="section-header">
+        <h2>Notre <span class="accent">Menu</span></h2>
+        <p>Des saveurs authentiques pour tous les goûts</p>
+      </div>
+
+      <!-- Filtres de catégorie -->
+      <div class="menu-filters">
+        <button class="filter-btn active" data-cat="tous">Tous</button>
+        <button class="filter-btn" data-cat="poulet">Poulet</button>
+        <button class="filter-btn" data-cat="burgers">Burgers</button>
+        <button class="filter-btn" data-cat="salades">Salades</button>
+        <button class="filter-btn" data-cat="desserts">
+          Desserts & Glaces
+        </button>
+        <button class="filter-btn" data-cat="boissons">Boissons</button>
+        <button class="filter-btn" data-cat="garnitures">Garnitures</button>
+      </div>
+
+      <!-- Grille de plats -->
+      <div class="menu-grid" id="menu-grid">
+        <!-- POULET -->
+        <div class="menu-card" data-cat="poulet">
+          <div class="menu-card-img">
+            <img src="IMG-20251103-WA0094.jpg" alt="Fried Chicken" />
+            <span class="badge">Populaire</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Fried Chicken</h3>
+            <p>Poulet pané croustillant servi avec sauce maison</p>
+            <div class="menu-card-footer">
+              <span class="price">2 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20du%20Fried%20Chicken"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="poulet">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1598103442097-8b74394b95c3?w=600&q=80"
+              alt="Poulet DG"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Poulet DG</h3>
+            <p>Poulet mijoté aux légumes, plantain et épices locales</p>
+            <div class="menu-card-footer">
+              <span class="price">3 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20du%20Poulet%20DG"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="poulet">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1567529692333-de9fd6772897?w=600&q=80"
+              alt="Poulet pané 1 pièce"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>1 Pièce Poulet Pané + Frites + Jus</h3>
+            <p>Une pièce de poulet pané, frites de pommes et jus hibiscus</p>
+            <div class="menu-card-footer">
+              <span class="price">2 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20le%20menu%201%20pi%C3%A8ce%20poulet%20pan%C3%A9"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="poulet">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1562967914-608f82629710?w=600&q=80"
+              alt="Poulet pané 2 pièces"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>2 Pièces Poulet Pané + Frites + Jus</h3>
+            <p>Deux pièces de poulet pané, frites et jus hibiscus</p>
+            <div class="menu-card-footer">
+              <span class="price">3 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20le%20menu%202%20pi%C3%A8ces%20poulet%20pan%C3%A9"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="poulet">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80"
+              alt="Mega poulet 4 pièces"
+            />
+            <span class="badge badge-green">Meilleur deal</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Méga Menu 4 Pièces + Frites + Jus</h3>
+            <p>Quatre pièces de poulet pané, frites et jus hibiscus</p>
+            <div class="menu-card-footer">
+              <span class="price">4 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20le%20m%C3%A9ga%20menu%204%20pi%C3%A8ces"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- BURGERS -->
+        <div class="menu-card" data-cat="burgers">
+          <div class="menu-card-img">
+            <img src="IMG-20251103-WA0097.jpg" alt="Hamburger au Poulet" />
+            <span class="badge">Best-seller</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Hamburger Parfumé au Poulet + Frites</h3>
+            <p>Burger au poulet grillé, légumes frais et frites de pommes</p>
+            <div class="menu-card-footer">
+              <span class="price">2 500 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20un%20Hamburger%20Parfum%C3%A9%20au%20Poulet"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="burgers">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80"
+              alt="Hamburger viande"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Hamburger à la Viande + Frites</h3>
+            <p>Burger juteux à la viande frite avec frites de pommes</p>
+            <div class="menu-card-footer">
+              <span class="price">2 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20un%20Hamburger%20%C3%A0%20la%20Viande"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="burgers">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&q=80"
+              alt="Hamburger simple"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Hamburger Simple</h3>
+            <p>Le classique : pain moelleux, steak, sauce et légumes</p>
+            <div class="menu-card-footer">
+              <span class="price">1 500 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20un%20Hamburger%20Simple"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SALADES -->
+        <div class="menu-card" data-cat="salades">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80"
+              alt="Salade Frais"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Salade Fraîche</h3>
+            <p>Salade composée de légumes frais de saison</p>
+            <div class="menu-card-footer">
+              <span class="price">2 500 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20une%20Salade%20Fra%C3%AEche"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="salades">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80"
+              alt="Salade Mexicaine"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Salade Mexicaine</h3>
+            <p>Haricots, maïs, tomates, épices et vinaigrette piquante</p>
+            <div class="menu-card-footer">
+              <span class="price">2 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20une%20Salade%20Mexicaine"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="salades">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&q=80"
+              alt="Salade Crudités"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Salade de Crudités</h3>
+            <p>Assortiment de légumes crus, vinaigrette maison</p>
+            <div class="menu-card-footer">
+              <span class="price">1 500 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20une%20Salade%20de%20Crudités"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="salades">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&q=80"
+              alt="Avocat aux oeufs"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Avocat aux Œufs Durs</h3>
+            <p>Demi-avocats garnis d'œufs durs, assaisonnés avec soin</p>
+            <div class="menu-card-footer">
+              <span class="price">à voir</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20Avocat%20aux%20%C5%92ufs%20Durs"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-card" data-cat="desserts">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80"
+              alt="Gaufre Chocolat"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Gaufre Chocolat</h3>
+            <p>Gaufre moelleuse nappée de chocolat fondu</p>
+            <div class="menu-card-footer">
+              <span class="price">2 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20une%20Gaufre%20Chocolat"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="desserts">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=600&q=80"
+              alt="Gaufre Simple"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Gaufre Simple</h3>
+            <p>Gaufre dorée classique, légère et croustillante</p>
+            <div class="menu-card-footer">
+              <span class="price">1 500 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20une%20Gaufre%20Simple"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="desserts">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&q=80"
+              alt="Glace Cornet"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Glace Cornet</h3>
+            <p>Vanille ou chocolat — un délice rafraîchissant</p>
+            <div class="menu-card-footer">
+              <span class="price">1 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20une%20Glace%20Cornet"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="desserts">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=600&q=80"
+              alt="Beignet Bouillie"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Beignet Bouillie</h3>
+            <p>Beignets locaux croustillants, dorés à la perfection</p>
+            <div class="menu-card-footer">
+              <span class="price">1 500 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20des%20Beignets%20Bouillie"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- BOISSONS -->
+        <div class="menu-card" data-cat="boissons">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80"
+              alt="Jus Naturel"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Jus Naturel</h3>
+            <p>Hibiscus, gingembre ou ananas — frais et maison</p>
+            <div class="menu-card-footer">
+              <span class="price">1 000 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20un%20Jus%20Naturel"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="boissons">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80"
+              alt="Eau"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Eau Minérale</h3>
+            <p>Eau fraîche pour accompagner votre repas</p>
+            <div class="menu-card-footer">
+              <span class="price">500 F</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20de%20l%27eau"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- GARNITURES -->
+        <div class="menu-card" data-cat="garnitures">
+          <div class="menu-card-img">
+            <img src="IMG-20251103-WA0099.jpg" alt="Frites de Pommes" />
+          </div>
+          <div class="menu-card-body">
+            <h3>Frites de Pommes</h3>
+            <p>Frites maison croustillantes, assaisonnées à point</p>
+            <div class="menu-card-footer">
+              <span class="price">inclus</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20des%20Frites%20de%20Pommes"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="garnitures">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80"
+              alt="Frites de Plantain"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Frites de Plantain</h3>
+            <p>Alloco croustillant — saveur camerounaise authentique</p>
+            <div class="menu-card-footer">
+              <span class="price">inclus</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20des%20Frites%20de%20Plantain"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="garnitures">
+          <div class="menu-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1513185158878-8d8c2a2a3da3?w=600&q=80"
+              alt="Bâton de Manioc"
+            />
+          </div>
+          <div class="menu-card-body">
+            <h3>Bâton de Manioc</h3>
+            <p>Miondo traditionnel, accompagnement parfait aux grillades</p>
+            <div class="menu-card-footer">
+              <span class="price">inclus</span>
+              <a
+                href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20du%20B%C3%A2ton%20de%20Manioc"
+                target="_blank"
+                class="btn-order"
+                >Commander</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /menu-grid -->
+    </section>
+
+    <!-- ===== SECTION GRILLADES ===== -->
+    <section id="grillades" class="section-grillades">
+      <div class="section-header">
+        <h2>Spécial <span class="accent">Grillades</span></h2>
+        <p>Nos grillades cuites à la braise avec accompagnements</p>
+      </div>
+
+      <div class="grillades-grid">
+        <!-- Poulet braisé menus -->
+        <div class="grillade-category">
+          <div class="grillade-category-title">
+            <i class="fas fa-drumstick-bite"></i> Poulet Braisé
+          </div>
+          <div class="grillade-items">
+            <div class="grillade-row">
+              <div class="grillade-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1598103442097-8b74394b95c3?w=400&q=80"
+                  alt="Poulet braisé"
+                />
+              </div>
+              <div class="grillade-info">
+                <p>
+                  Menu 1 — Entrée + Dessert (Poulet 6) + Frite plantain ou
+                  pommes
+                </p>
+                <span class="price">6 000 F</span>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20Menu%201%20Poulet%20Braisé"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+            <div class="grillade-row">
+              <div class="grillade-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1567529692333-de9fd6772897?w=400&q=80"
+                  alt="Poulet braisé famille"
+                />
+              </div>
+              <div class="grillade-info">
+                <p>
+                  Menu pour 2 — Poulet 10 + Frites de plantain et pommes ou
+                  miondo
+                </p>
+                <span class="price">10 000 F</span>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20Menu%20pour%202%20Poulet%20Braisé"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+            <div class="grillade-row">
+              <div class="grillade-info">
+                <p>Menu pour 3 — Poulet 15 + Frites + miondo</p>
+                <span class="price">15 000 F</span>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20Menu%20pour%203%20Poulet%20Braisé"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+            <div class="grillade-row">
+              <div class="grillade-info">
+                <p>
+                  Menu pour 4 — Poulet 20 + Frites + miondo + 4 jus hibiscus
+                </p>
+                <span class="price">20 000 F</span>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20Menu%20pour%204%20Poulet%20Braisé"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poisson braisé -->
+        <div class="grillade-category">
+          <div class="grillade-category-title">
+            <i class="fas fa-fish"></i> Poisson Braisé
+          </div>
+          <div class="grillade-items">
+            <div class="grillade-row">
+              <div class="grillade-img-wrap">
+                <img src="IMG-20251103-WA0098.jpg" alt="Poisson braisé" />
+              </div>
+              <div class="grillade-info">
+                <p>Maquereaux — Entrée + Dessert + Frites</p>
+                <div class="price-range">
+                  <span class="price">4 000 F</span>
+                  <span class="price-sep">·</span>
+                  <span class="price">5 000 F</span>
+                  <span class="price-sep">·</span>
+                  <span class="price">6 000 F</span>
+                </div>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20des%20Maquereaux%20Braisés"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+            <div class="grillade-row">
+              <div class="grillade-info">
+                <p>Bar — Entrée + Dessert + Frites (prix selon grosseur)</p>
+                <div class="price-range">
+                  <span class="price">5 000 F</span>
+                  <span class="price-sep">→</span>
+                  <span class="price">8 000 F</span>
+                </div>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20du%20Bar%20Braisé"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+            <div class="grillade-row">
+              <div class="grillade-info">
+                <p>Carpes — Entrée + Dessert + Frites</p>
+                <div class="price-range">
+                  <span class="price">4 000 F</span>
+                  <span class="price-sep">→</span>
+                  <span class="price">7 000 F</span>
+                </div>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20des%20Carpes%20Braisées"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+            <div class="grillade-row">
+              <div class="grillade-info">
+                <p>Silures — Entrée + Dessert + Frites</p>
+                <div class="price-range">
+                  <span class="price">4 000 F</span>
+                  <span class="price-sep">→</span>
+                  <span class="price">6 000 F</span>
+                </div>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20des%20Silures%20Braisés"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brochettes -->
+        <div class="grillade-category">
+          <div class="grillade-category-title">
+            <i class="fas fa-bacon"></i> Brochettes
+          </div>
+          <div class="grillade-items">
+            <div class="grillade-row">
+              <div class="grillade-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&q=80"
+                  alt="Brochettes"
+                />
+              </div>
+              <div class="grillade-info">
+                <p>04 Brochettes — Entrée + Dessert + Frites</p>
+                <div class="price-range">
+                  <span class="price">3 000 F</span>
+                  <span class="price-sep">·</span>
+                  <span class="price">6 000 F</span>
+                  <span class="price-sep">·</span>
+                  <span class="price">8 000 F</span>
+                  <span class="price-sep">·</span>
+                  <span class="price">10 000 F</span>
+                </div>
+                <a
+                  href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20commander%20des%20Brochettes"
+                  target="_blank"
+                  class="btn-order-sm"
+                  >Commander</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu du weekend -->
+        <div class="grillade-category weekend-card">
+          <div class="grillade-category-title">
+            <i class="fas fa-calendar-week"></i> Menu Spécial du Week-end
+          </div>
+          <div class="weekend-grid">
+            <div class="weekend-item">
+              <strong>Poisson d'eau douce</strong>
+              <span class="price">3 000 F</span>
+            </div>
+            <div class="weekend-item">
+              <strong>Bouillon de viande</strong>
+              <span class="price">2 500 F</span>
+            </div>
+            <div class="weekend-item">
+              <strong>Ndolé</strong>
+              <span class="price">3 000 F</span>
+            </div>
+            <div class="weekend-item">
+              <strong>Eru Obstacle</strong>
+              <span class="price">3 000 F</span>
+            </div>
+            <div class="weekend-item">
+              <strong>Légumes Sautés</strong>
+              <span class="price">3 000 F</span>
+            </div>
+            <div class="weekend-item">
+              <strong>Poulet braisé</strong>
+              <span class="price">3 000 F</span>
+            </div>
+          </div>
+          <a
+            href="https://wa.me/237654795898?text=Bonjour,%20je%20voudrais%20voir%20le%20menu%20du%20week-end"
+            target="_blank"
+            class="btn-primary"
+            style="display: inline-block; margin-top: 1rem"
+            >Commander ce week-end</a
+          >
+        </div>
+      </div>
+      <!-- /grillades-grid -->
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="apropos" class="section-apropos">
+      <div class="apropos-image">
+        <img src="IMG-20251103-WA0095.jpg" alt="Chez Anthony Fast Food" />
+      </div>
+      <div class="apropos-content">
+        <h2>Notre <span class="accent">Histoire</span></h2>
+        <p>
+          Chez Anthony, c'est une histoire de passion pour la bonne cuisine
+          camerounaise et les saveurs qui rassemblent. Né d'une envie de
+          proposer des grillades généreuses et des fast-foods de qualité dans
+          une ambiance chaleureuse, notre restaurant est rapidement devenu le
+          rendez-vous incontournable de Yaoundé.
+        </p>
+        <p>
+          Nous sélectionnons nos ingrédients avec soin, cuisinons chaque plat à
+          la commande et garantissons une expérience savoureuse à chaque visite.
+          Famille, amis, étudiants — tout le monde est le bienvenu.
+        </p>
+        <ul class="apropos-list">
+          <li>
+            <i class="fas fa-check-circle"></i> Ingrédients frais et locaux
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Grillades préparées à la braise
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Restaurant familial et convivial
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i> Commande rapide via WhatsApp
+          </li>
+        </ul>
+        <a
+          href="https://wa.me/237654795898"
+          target="_blank"
+          class="btn-primary"
+        >
+          <i class="fab fa-whatsapp"></i> Contactez-nous
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== AVIS CLIENTS ===== -->
+    <section class="section-avis">
+      <div class="section-header">
+        <h2>Ce que disent <span class="accent">nos clients</span></h2>
+        <p>
+          Des centaines de clients satisfaits nous font confiance chaque jour
+        </p>
+      </div>
+
+      <div class="avis-grid">
+        <div class="avis-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            « Les meilleures grillades de Yaoundé ! Le poulet braisé est tendre,
+            bien assaisonné et les frites de plantain sont délicieuses. Je
+            reviens chaque semaine ! »
+          </p>
+          <div class="avis-author">
+            <div class="avis-avatar">N</div>
+            <strong>Nadia M.</strong>
+          </div>
+        </div>
+        <div class="avis-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            « Excellent rapport qualité-prix. Le menu poulet pané avec frites et
+            jus hibiscus à 2000F est imbattable. Personnel accueillant et
+            service rapide. »
+          </p>
+          <div class="avis-author">
+            <div class="avis-avatar">F</div>
+            <strong>Franck T.</strong>
+          </div>
+        </div>
+        <div class="avis-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>
+            « Le Ndolé du week-end est incroyable. C'est rare de trouver un
+            fast-food qui propose aussi des plats traditionnels de cette
+            qualité. Bravo l'équipe ! »
+          </p>
+          <div class="avis-author">
+            <div class="avis-avatar">A</div>
+            <strong>Amina B.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section-contact">
+      <div class="section-header">
+        <h2>Nous <span class="accent">Contacter</span></h2>
+        <p>Une question ou une commande spéciale ? Écrivez-nous !</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Adresse</h4>
+              <p>Tsinga, Yaoundé, Cameroun</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <h4>WhatsApp / Téléphone</h4>
+              <p>+237 654 795 898</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Horaires</h4>
+              <p>Lun – Ven : 11h – 22h</p>
+              <p>Sam – Dim : 10h – 23h</p>
+            </div>
+          </div>
+          <a
+            href="https://wa.me/237654795898"
+            target="_blank"
+            class="btn-whatsapp-big"
+          >
+            <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-form-box">
+          <h3>Envoyez-nous un message</h3>
+          <div class="form-group">
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" placeholder="Jean Dupont" />
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone / WhatsApp</label>
+            <input type="tel" id="tel" placeholder="+237 6XX XXX XXX" />
+          </div>
+          <div class="form-group">
+            <label for="msg">Votre message</label>
+            <textarea
+              id="msg"
+              rows="4"
+              placeholder="Bonjour, je voudrais commander..."
+            ></textarea>
+          </div>
+          <button class="btn-primary btn-full" id="send-btn">
+            <i class="fab fa-whatsapp"></i> Envoyer via WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img
+            src="IMG-20260521-WA0100.jpg"
+            alt="Logo Chez Anthony"
+            class="footer-logo"
+          />
+          <p>
+            Fast Food & Grill de qualité à Yaoundé.<br />Saveurs authentiques,
+            service chaleureux.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/237654795898" aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="#accueil">Accueil</a>
+          <a href="#menu">Menu</a>
+          <a href="#grillades">Grillades</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Horaires</h4>
+          <p>Lun – Ven : 11h – 22h</p>
+          <p>Sam – Dim : 10h – 23h</p>
+          <br />
+          <h4>Commande rapide</h4>
+          <a
+            href="https://wa.me/237654795898"
+            target="_blank"
+            class="btn-whatsapp-footer"
+          >
+            <i class="fab fa-whatsapp"></i> +237 654 795 898
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Chez Anthony Fast Food. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button id="back-top" aria-label="Retour en haut">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
